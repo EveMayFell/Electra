@@ -1,4 +1,4 @@
-# dependencies
+﻿# dependencies
 node_modules/
 .pnpm-store/
 
@@ -19,3 +19,6 @@ release/*.zip
 # local credentials (never commit)
 .github_token
 .env
+
+.github_token*
+
