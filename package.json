@@ -1,0 +1,25 @@
+{
+  "name": "electra-power-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ELECTRA — browser-based power system single-line design, power flow, protection, short-circuit, stability and regulation workstation.",
+  "keywords": [
+    "power-systems",
+    "single-line-diagram",
+    "load-flow",
+    "short-circuit",
+    "protection",
+    "stability",
+    "svg",
+    "engineering"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "python -m http.server 5188 --bind 127.0.0.1",
+    "test": "node --test tests/engine.test.mjs"
+  }
+}

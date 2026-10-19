@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# logs and temporary files
+*.log
+*.tmp
+screenshots/debug-*.png
+release/staging/
+
+# release archives are uploaded to GitHub Releases, not committed
+release/*.zip
