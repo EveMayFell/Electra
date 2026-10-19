@@ -1,0 +1,65 @@
+name: Bug report
+description: Report a reproducible calculation, UI or data-exchange problem.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report an issue. Please remove confidential
+        project data before attaching a JSON project or screenshot.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: A clear and concise description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Load example ...
+        2. Open ...
+        3. Run ...
+        4. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Single-line editor
+        - Power flow / matrices
+        - Protection / reclosing
+        - Short circuit
+        - Stability
+        - Voltage / frequency regulation
+        - Data exchange
+        - Report / export
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: Chrome 140 / Edge 140 / Firefox 142
+  - type: input
+    id: version
+    attributes:
+      label: ELECTRA version
+      placeholder: v1.0.0
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console errors or calculation output
+      render: shell

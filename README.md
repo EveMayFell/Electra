@@ -1,8 +1,33 @@
-# ELECTRA · 电力系统一次设计与分析平台
+<div align="center">
+
+<img src="assets/logo.svg" width="78" alt="ELECTRA logo">
+
+# ELECTRA
+
+### Power systems, in the browser.
+
+**浏览器端电力系统一次设计与分析工作台**  
+单线图 · 潮流 · 51 种保护 · 短路 · 稳定 · 电压/频率调节
+
+[![CI](https://github.com/EveMayFell/Electra/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/EveMayFell/Electra/actions/workflows/ci.yml)
+[![Deploy Pages](https://github.com/EveMayFell/Electra/actions/workflows/pages.yml/badge.svg?branch=main)](https://github.com/EveMayFell/Electra/actions/workflows/pages.yml)
+[![Release](https://img.shields.io/github/v/release/EveMayFell/Electra?display_name=tag&sort=semver)](https://github.com/EveMayFell/Electra/releases)
+[![License: MIT](https://img.shields.io/github/license/EveMayFell/Electra)](LICENSE)
+[![Tests](https://img.shields.io/badge/tests-25%20passing-4ce0c3)](#测试)
+
+**[▶ Live Demo](https://evemayfell.github.io/Electra/)** ·
+[功能一览](#功能一览) ·
+[快速开始](#快速开始) ·
+[发行说明](RELEASE_NOTES.md) ·
+[报告问题](https://github.com/EveMayFell/Electra/issues)
+
+</div>
+
+<img src="assets/social-preview.png" alt="ELECTRA Power System Studio" width="100%">
 
 一个面向电力工程方案设计的浏览器端工作台：在可交互单线图上绘制一次主接线，配置母线、线路、双绕组/三绕组变压器、电源、负荷和补偿装置，完成节点导纳矩阵组集、牛顿-拉夫逊 / PQ 分解 / 高斯-赛德尔 / 直流潮流计算，并进一步做继电保护整定与灵敏度扫描、三/两/单相短路校验、N-1 静态安全扫描、经典暂态稳定仿真、网损/成本优化和多运行场景对比。
 
-> 全部计算在浏览器本地完成，不需要后端、不需要安装数据库。工程文件以 JSON 保存，Excel / CSV / CIM / BPA 风格数据可导出。内置 3 套示例，其中包含一套 25 节点复杂大电网。
+> **全部计算在浏览器本地完成**，不需要后端、不需要安装数据库。工程文件以 JSON 保存，Excel / CSV / CIM / BPA 风格数据可导出。内置 3 套示例，其中包含一套 25 节点复杂大电网。
 
 ![主接线设计与潮流结果](screenshots/02-design-powerflow.png)
 

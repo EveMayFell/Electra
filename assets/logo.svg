@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="ELECTRA logo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1d2b"/>
+      <stop offset="1" stop-color="#07111e"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7ff5df"/>
+      <stop offset="1" stop-color="#2fc7a8"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="108" fill="url(#bg)"/>
+  <rect x="12" y="12" width="488" height="488" rx="96" fill="none" stroke="#1f3a52" stroke-width="2"/>
+  <path d="M286 72 148 286h102l-30 154 150-226H266l20-142Z" fill="url(#bolt)"/>
+  <path d="M286 72 148 286h102l-30 154 150-226H266l20-142Z" fill="none" stroke="#b8fff2" stroke-opacity=".35" stroke-width="3"/>
+</svg>

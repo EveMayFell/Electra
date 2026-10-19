@@ -1,0 +1,44 @@
+name: Feature request
+description: Suggest a power-system feature, device model or workflow improvement.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ELECTRA is a browser-based, zero-backend engineering workbench. Please
+        describe the engineering use case, not only the UI control you want.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Engineering problem
+      description: What calculation, workflow or device is missing or difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Single-line editor / devices
+        - Power flow / matrices
+        - Protection / reclosing
+        - Short circuit / zero sequence
+        - Stability
+        - Voltage / frequency regulation
+        - Data exchange / reports
+        - Examples / documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Standards, references or example data
+      description: IEC / GB / DL / manufacturer references are welcome.

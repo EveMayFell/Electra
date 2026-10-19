@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Live demo
+    url: https://evemayfell.github.io/Electra/
+    about: Open the latest deployed ELECTRA app.
+  - name: Release notes
+    url: https://github.com/EveMayFell/Electra/releases
+    about: Download the latest source release and read the change log.
