@@ -15,3 +15,7 @@ release/staging/
 
 # release archives are uploaded to GitHub Releases, not committed
 release/*.zip
+
+# local credentials (never commit)
+.github_token
+.env
