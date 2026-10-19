@@ -35,16 +35,16 @@
 
 ## 快速开始
 
-### 使用当前服务
+### 在线使用
 
-打开 <http://127.0.0.1:5188>。
+打开 **[Live Demo](https://evemayfell.github.io/Electra/)**。
 
 ### 本地启动
 
 要求：Windows + Python 3（仅用于静态文件服务），或任意静态 HTTP 服务器。
 
 ```bat
-cd /d F:\dshSoftware
+cd /d <项目目录>
 python -m http.server 5188 --bind 127.0.0.1
 ```
 
@@ -423,7 +423,7 @@ y_L=\frac{P_L-jQ_L}{V_0^2}
 ## 项目结构
 
 ```
-F:\dshSoftware
+ELECTRA-Power-Studio-v1.0.0/
 ├─ index.html                 应用入口
 ├─ styles.css                 深色工程工作站样式
 ├─ start.bat                  本地静态服务启动脚本
@@ -525,21 +525,20 @@ node --test tests/engine.test.mjs
 
 本目录即 GitHub 仓库根目录（项目目录名 `Eletra`，产品名 `ELECTRA`）。
 
+- 在线应用：<https://evemayfell.github.io/Electra/>
 - 版本：`1.0.0`，见 `VERSION`
 - 变更记录：`CHANGELOG.md`
 - 发行说明：`RELEASE_NOTES.md`
 - 发行资产：`release/ELECTRA-Power-Studio-v1.0.0.zip` 与 `release/SHA256SUMS.txt`
-- 静态站点部署：`.github/workflows/pages.yml`，推送到 `main` 后在仓库
-  **Settings → Pages → Source = GitHub Actions** 启用
+- 静态站点部署：`.github/workflows/pages.yml`，已在仓库启用 **Settings → Pages → Source = GitHub Actions**
 - 本地测试：`npm test` 或 `node --test tests/engine.test.mjs`
 
 ```bash
-git init
-git add .
-git commit -m "ELECTRA Power System Studio v1.0.0"
-git branch -M main
-git remote add origin <your-repository-url>
-git push -u origin main
+git clone https://github.com/EveMayFell/Electra.git
+cd Electra
+git checkout v1.0.0
 ```
 
-发布 GitHub Release 时使用 tag `v1.0.0`，上传 `release/` 下的 zip 和校验文件即可。
+v1.0.0 Release 已发布，zip 与校验文件可从
+[Releases](https://github.com/EveMayFell/Electra/releases/tag/v1.0.0) 下载。
+GitHub Pages 已启用，首页为 <https://evemayfell.github.io/Electra/>。
